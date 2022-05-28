@@ -1,0 +1,18 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "nameRegister": "trieudang@gmail.com",
+    "password": "0375139630Trieu",
+    "fullName": "Dang Phuoc Trieu",
+    "displayName": "Trieu dzai",
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "nameLogin": "0375139630",
+    "password": "0375139630Hong"
+}
