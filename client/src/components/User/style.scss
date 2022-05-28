@@ -1,0 +1,133 @@
+@import '../../scss//variables.scss';
+
+.user {
+    width: calc(35% - 20px);
+    margin-top: 25px;
+    
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0;
+        position: fixed;
+        width: 307px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__avatar {
+        display: flex;
+        flex-shrink: 0;
+        width: 55px;
+        height: 55px;
+        border-radius: 100rem;
+        cursor: pointer;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+        }
+    }
+
+    &__name {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0;
+        font-size: 14px;
+        
+        &-display {
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        &-full {
+            color: $gray-color;
+            padding: 2px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    &__transfer {
+        color: $blue-color;
+        font-weight: 600;
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__suggest {
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            
+            p {
+                font-size: 14px;
+                color: $gray-color;
+                font-weight: 500;
+            }
+
+            button {
+                font-size: 12px;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+
+        &-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 100rem;
+            margin-right: 10px;
+        }
+
+        &-name {
+            display: flex;
+            flex-direction: column;
+            gap: 7px 0;
+
+            h5 {
+                font-size: 13px;
+                font-weight: 600;
+            }
+
+            span {
+                color: $gray-color;
+            }
+        }
+
+        &-follow {
+            margin-left: auto;
+            font-size: 12px;
+            font-weight: 600;
+
+            p {
+                color: black;
+            }
+
+            span {
+                color: $blue-color;
+            }
+        }
+    }
+
+    @media screen and(max-width: 479px) {
+        display: none;
+    }
+}
