@@ -44,7 +44,7 @@ function Register() {
                         <input onChange={e => setUsername(e.target.value)} className="register__username" placeholder='Số điện thoai hoặc email' />
                         <input onChange={e => setFullName(e.target.value)} className="register__fullname"  placeholder='Tên đầy đủ' />
                         <input onChange={e => setDisplayName(e.target.value)} className="register__displayname"  placeholder='Tên người dùng' />
-                        <input onChange={e => setPassword(e.target.value)} className="register__fullname" type='password'  placeholder='Mật khẩu' />
+                        <input onChange={e => setPassword(e.target.value)} className="register__fullname" type='password' placeholder='Mật khẩu' />
                     </div>
                     <button className={`register__submit 
                         ${(username && fullName && displayName && password) ? 'register__submit--active' : ''}`}
