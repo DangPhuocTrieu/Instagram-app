@@ -1,15 +1,15 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import './scss/global.scss'
+import Account from './components/Account';
 import Login from './components/Login';
+import PostsSaved from './components/PostsSaved';
+import PostsTagged from './components/PostsTagged';
+import PostsUser from './components/PostsUser';
 import Register from './components/Register';
-import {Routes, Route } from 'react-router-dom'
+import MainLayout from './Layout/MainLayout';
 import Home from './pages/Home';
 import UserDetail from './pages/UserDetail';
-import MainLayout from './Layout/MainLayout';
-import PostsSaved from './components/PostsSaved'
-import PostsTagged from './components/PostsTagged'
-import PostsUser from './components/PostsUser';
-import Account from './components/Account';
+import './scss/global.scss';
 
 function App() {
 

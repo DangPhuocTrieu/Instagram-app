@@ -11,8 +11,6 @@ dotenv.config()
 const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URL, {
-            // useCreateIndex: true,
-            // useFindAndModify: false
             useNewUrlParser: true,
             useUnifiedTopology: true,
         })
