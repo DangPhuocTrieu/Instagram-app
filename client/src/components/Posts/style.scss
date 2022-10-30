@@ -190,13 +190,22 @@
             }
         }
 
-        &-follow {
+        &-follow, &-isfollow {
             padding: 7px 10px;
             font-size: 14px;
-            color: white;
-            background-color: $blue-color;
             border-radius: 4px;
             margin-left: auto;
+            
+        }
+
+        &-follow {
+            color: white;
+            background-color: $blue-color;
+        }
+
+        &-isfollow {
+            color: black;
+            border: 1px solid $border-color;
         }
     }
 

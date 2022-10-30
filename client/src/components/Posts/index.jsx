@@ -16,6 +16,7 @@ function Posts() {
     const dispatch = useDispatch()
 
     const user = useSelector(state => state.auth.login.currentUser)
+
     const posts = useSelector(state => state.post.posts)
 
     const loading = useSelector(state => state.post.isFetching)
@@ -136,7 +137,15 @@ function Posts() {
                                                       <p>{item.displayName}</p>
                                                       <p>{item.fullName}</p>
                                                    </div>
-                                                   <button className="post__heart-follow">Theo dõi</button>
+                                                   {
+                                                      user._id !== item._id && (
+                                                         user.isFollow.find(x => x === item._id) ? (
+                                                            <button className="post__heart-isfollow">Đang theo dõi</button>
+                                                         ) : (
+                                                            <button className="post__heart-follow">Theo dõi</button>
+                                                         )
+                                                      ) 
+                                                   }
                                                 </div>
                                              ))
                                           }

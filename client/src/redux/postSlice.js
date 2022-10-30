@@ -62,7 +62,6 @@ const postSlice = createSlice({
                 return post
             })
         },
-
     }
 })
 
